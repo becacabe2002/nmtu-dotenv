@@ -1,0 +1,91 @@
+window:
+  dimensions:
+    columns: 90
+    lines: 40
+
+  paddings:
+    x: 10
+    y: 10
+
+  dynamic_padding: true
+  
+  decorations: None
+
+  startup_mode: Windowed
+
+  opacity: 0.9
+
+scrolling: 
+  history: 1000
+  multiplier: 3
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+
+  size: 12.0
+  offset:
+    x: 1
+    y: 2
+
+draw_bold_text_with_bright_colors: true
+
+custom_cursor_colors: true
+
+colors:
+
+  # Tomorrow (https://github.com/aarowill/base16-alacritty/blob/master/colors/base16-tomorrow.yml)
+  # Default colors
+  primary:
+    background: '0x1a1b26'
+    foreground: '0xa9b1d6'
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x1a1b26'
+    cursor: '0xa9b1d6'
+  # Normal colors
+  normal:
+    black : '0x1a1b26'
+    red : '0xc0caf5'
+    green : '0x9ece6a'
+    yellow : '0x0db9d7'
+    blue : '0x2ac3de'
+    magenta : '0xbb9af7'
+    cyan : '0xb4f9f8'
+    white : '0xa9b1d6'  # Bright colors
+  bright:
+    black : '0x444b6a'
+    red : '0xc0caf5'
+    green : '0x9ece6a'
+    yellow : '0x0db9d7'
+    blue : '0x2ac3de'
+    magenta : '0xbb9af7'
+    cyan : '0xb4f9f8'
+    white : '0xd5d6db'
+
+# key_bindings:
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  hide_when_typing: true
+
+cursor:
+  # Cursor style
+  #
+  # Values for 'style':
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Underline
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: false
+
+# dynamic_title: false
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
