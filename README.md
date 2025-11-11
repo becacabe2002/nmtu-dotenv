@@ -24,11 +24,13 @@ _Stow Explain_:
         + For each machine, clone this repo to local first, then stow it second
 
 * Stow naming convention:
+
 ```text
 <parent-directory>/<package-name>/its/file/structure
 ```
 
 * Commands
+
 ```shell
 # Assume we are current in parent-directory
 stow package name

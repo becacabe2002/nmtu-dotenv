@@ -15,11 +15,13 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- my plugins
   -- use 'NLKNguyen/papercolor-theme'
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'AckslD/swenv.nvim'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.8',
@@ -67,6 +69,13 @@ return require('packer').startup(function(use)
   use {
     'folke/which-key.nvim',
     }
+  use {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

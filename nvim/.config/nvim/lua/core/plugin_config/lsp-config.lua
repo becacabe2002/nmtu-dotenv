@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = {"lua_ls"}
+  ensure_installed = {"lua_ls", "pyright"}
 })
 
 local on_attach = function(_, _)
@@ -24,10 +24,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 --   on_attach = on_attach,
 --   capabilities = capabilities,
 -- }
--- require("lspconfig").jdtls.setup{
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
+
 -- require("lspconfig").jedi_language_server.setup{
 --   on_attach = on_attach,
 --   capabilities = capabilities,

@@ -1,7 +1,12 @@
 vim.opt.termguicolors = true
 -- local builtin = require('bufferline')
 
-require('bufferline').setup{}
+require("bufferline").setup({
+    options = {
+        -- Enable the Catppuccin theme integration
+        theme = "catppuccin",
+    },
+})
 
 vim.keymap.set('n', '<leader>1', '<Cmd>BufferLineGoToBuffer 1<CR>', {noremap = true, silent = true, desc = "First buffer in BufferLine"})
 vim.keymap.set('n', '<leader>2', '<Cmd>BufferLineGoToBuffer 2<CR>', {noremap = true, silent = true, desc = "Second buffer in BufferLine"})
